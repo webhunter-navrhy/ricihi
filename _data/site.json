@@ -1,0 +1,189 @@
+{
+  "name": "Pivnice U Ričího",
+  "title": "Pivnice U Ričího – kozlovská pivnice na Veveří | Brno, Jana Uhra 10",
+  "description": "Kozlovská pivnice v Brně na Veveří, Jana Uhra 10. Točený Kozel a Radegast, chleba s tvarůžkem, šipky, fotbálek, salonky a středeční kvíz. Otevřeno každý den od 16 hodin.",
+  "address": {
+    "street": "Jana Uhra 168/10",
+    "city": "602 00 Brno",
+    "part": "Veveří",
+    "lat": 49.20252,
+    "lng": 16.59618
+  },
+  "phone": "734 404 517",
+  "phone_href": "+420734404517",
+  "email": "langosr@centrum.cz",
+  "facebook": "https://www.facebook.com/pivniceuriciho/",
+  "mapy": "https://mapy.com/s/pivnice-u-riciho?q=Pivnice%20U%20Ri%C4%8D%C3%ADho%20Jana%20Uhra%2010%20Brno",
+  "mapy_url": "https://mapy.com/cs/zakladni?q=Pivnice%20U%20Ri%C4%8D%C3%ADho%2C%20Jana%20Uhra%20168%2F10%2C%20Brno",
+  "google_url": "https://www.google.com/maps/dir/?api=1&destination=Pivnice+U+Ri%C4%8D%C3%ADho%2C+Jana+Uhra+168%2F10%2C+602+00+Brno",
+  "hours": [
+    {
+      "d": "Pondělí",
+      "short": "Po",
+      "o": "16:00",
+      "c": "24:00"
+    },
+    {
+      "d": "Úterý",
+      "short": "Út",
+      "o": "16:00",
+      "c": "24:00"
+    },
+    {
+      "d": "Středa",
+      "short": "St",
+      "o": "16:00",
+      "c": "24:00",
+      "note": "kvíz"
+    },
+    {
+      "d": "Čtvrtek",
+      "short": "Čt",
+      "o": "16:00",
+      "c": "24:00"
+    },
+    {
+      "d": "Pátek",
+      "short": "Pá",
+      "o": "16:00",
+      "c": "24:00"
+    },
+    {
+      "d": "Sobota",
+      "short": "So",
+      "o": "17:00",
+      "c": "24:00"
+    },
+    {
+      "d": "Neděle",
+      "short": "Ne",
+      "o": "17:00",
+      "c": "24:00"
+    }
+  ],
+  "nav": [
+    {
+      "t": "Na čepu",
+      "h": "#na-cepu"
+    },
+    {
+      "t": "K pivu",
+      "h": "#k-pivu"
+    },
+    {
+      "t": "Zábava",
+      "h": "#zabava"
+    },
+    {
+      "t": "Akce",
+      "h": "#akce"
+    },
+    {
+      "t": "Kde nás najdete",
+      "h": "#kontakt"
+    }
+  ],
+  "hero": {
+    "kicker": "Kozlovská pivnice · Brno-Veveří · od roku 2014",
+    "h1a": "Na jedno",
+    "h1b": "u Ričího.",
+    "lead": "Dobře natočený Kozel a Radegast, chleba s tvarůžkem, šipky a fotbálek. Klenutý sál, dva salonky a ve středu kvíz. Otevíráme každý den odpoledne, kousek od centra na Veveří."
+  },
+  "marquee": [
+    "Kozel 11°",
+    "Radegast Ryze hořká 12°",
+    "Frisco na čepu",
+    "Chleba s tvarůžkem",
+    "Šipky",
+    "Fotbálek",
+    "Středeční kvíz",
+    "Salonek Jack Daniel's",
+    "Nekuřácký salonek",
+    "Od roku 2014"
+  ],
+  "about": {
+    "label": "Hospoda od roku 2014",
+    "h2a": "Pivnice, kam se",
+    "h2b": "chodí znovu.",
+    "p": [
+      "Pivnici U Ričího jsme otevřeli 6. srpna 2014 v ulici Jana Uhra na Veveří. Od té doby tu točíme Velkopopovického Kozla, Radegast a k tomu se vždycky najde něco na zub.",
+      "Pod klenbou se sedí u dlouhých dřevěných stolů, vzadu jsou salonky Jack Daniel's a nekuřácký. Přijďte po práci na jedno, s partou na šipky nebo s týmem na středeční kvíz."
+    ],
+    "quote": "Výborně natočené pivko, výborný chléb s tvarůžkem a k tomu příjemná obsluha. Mohu jen doporučit.",
+    "quote_by": "Michal P., recenze na Google"
+  },
+  "stats": [
+    {
+      "n": 2014,
+      "suffix": "",
+      "t": "rok, kdy jsme poprvé natočili",
+      "plain": true
+    },
+    {
+      "n": 4.5,
+      "suffix": "",
+      "dec": 1,
+      "t": "průměrné hodnocení na Google z 285 recenzí",
+      "star": true
+    },
+    {
+      "n": 92,
+      "suffix": " %",
+      "t": "hostů nás doporučuje na Facebooku (32 recenzí)"
+    },
+    {
+      "n": 7,
+      "suffix": "",
+      "t": "dní v týdnu otevřeno, od 16 nebo 17 hodin"
+    }
+  ],
+  "cep": {
+    "label": "Na čepu",
+    "h2a": "Kozlovská",
+    "h2b": "pivnice.",
+    "p": "Hlavní je u nás Velkopopovický Kozel. Vedle něj točíme Radegast Ryze hořkou 12°, Volbu sládků a cider Frisco, v lednici je Pilsner Urquell, Proud i nealko Birell.",
+    "note": "Ceny podle tabule u vchodu. Před spuštěním webu je s Vámi sladíme a budete je moct sami měnit."
+  },
+  "food": {
+    "label": "K pivu",
+    "h2a": "Něco",
+    "h2b": "na zub.",
+    "p": "Žádná velká kuchyně, ale pořádné jídlo k pivu. Hosté si nejvíc chválí chleba s tvarůžkem.",
+    "note": "Ukázkový výběr podle tabule v pivnici. Aktuální nabídku a ceny doplníme podle Vás."
+  },
+  "zabava": {
+    "label": "Zábava a salonky",
+    "h2a": "Nejen",
+    "h2b": "na pivo.",
+    "note": "Vybavení podle fotek a recenzí hostů. Co dnes platí, s Vámi ověříme."
+  },
+  "akce": {
+    "label": "Akce",
+    "h2a": "Co se",
+    "h2b": "u nás děje.",
+    "p": "Pravidelný kvíz, narozeniny pivnice a vánoční večírek s tombolou. Nové akce sem budete přidávat sami a hosté je uvidí dřív, než se rozkoukají na Facebooku."
+  },
+  "break": {
+    "h": "Slavíte? Máme salonky.",
+    "p": "Salonek Jack Daniel's a nekuřácký salonek jsou ideální na narozeniny, sraz spolužáků nebo kvízový tým. Napište, kolik Vás bude, a stůl připravíme."
+  },
+  "rez": {
+    "label": "Rezervace",
+    "h2a": "Zarezervujte",
+    "h2b": "si stůl.",
+    "p": "Vyplňte pár údajů a rezervaci Vám potvrdíme e-mailem. Na středeční kvíz doporučujeme rezervovat s předstihem.",
+    "spaces": [
+      "Hlavní sál pod klenbou",
+      "Salonek Jack Daniel's",
+      "Nekuřácký salonek",
+      "Je mi to jedno"
+    ],
+    "done": "Díky! Toto je ukázka v návrhu webu, nic se neodeslalo. Na hotovém webu Vám rezervace přijde rovnou do e-mailu."
+  },
+  "kontakt": {
+    "label": "Kde nás najdete",
+    "h2a": "Jana Uhra 10,",
+    "h2b": "Brno-Veveří.",
+    "p": "Najdete nás na Veveří, kousek od centra. Hledejte prosklené dveře s nápisem pivnice U Ričího a stojan s nabídkou piva."
+  }
+}

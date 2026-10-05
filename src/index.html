@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>{{ S.title }}</title>
+<meta name="description" content="{{ S.description }}">
+<meta property="og:title" content="{{ S.title }}">
+<meta property="og:description" content="{{ S.description }}">
+<meta property="og:image" content="img/salon-klenba.jpg">
+<meta name="theme-color" content="#1b1510">
+<link rel="icon" href="assets/favicon.svg?v={{ V.fav }}" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Hanken+Grotesk:wght@300;400;500;600&family=Lobster&family=Yellowtail&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin>
+<link rel="stylesheet" href="assets/style.css?v={{ V.css }}">
+<script type="application/ld+json">{{ LD }}</script>
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="hdr" id="top">
+  <a class="logo" href="#top" aria-label="Pivnice U Ričího – úvod">
+    <span class="logo-s">pivnice</span><span class="logo-m">U Ričího</span>
+  </a>
+  <nav class="nav" aria-label="Hlavní navigace">
+    {% for n in S.nav %}<a href="{{ n.h }}">{{ n.t }}</a>{% endfor %}
+  </nav>
+  <div class="hdr-r">
+    <span class="status" data-status><i></i><b>Otevírací doba</b></span>
+    <a class="btn btn-amber btn-sm" href="#rezervace">Rezervovat stůl</a>
+    <button class="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+<div class="mnav" aria-hidden="true">
+  {% for n in S.nav %}<a href="{{ n.h }}">{{ n.t }}</a>{% endfor %}
+  <a href="#rezervace" class="btn btn-amber">Rezervovat stůl</a>
+</div>
+
+<main>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-in wrap">
+    <div class="hero-txt">
+      <p class="kicker rv">{{ S.hero.kicker }}</p>
+      <h1 class="h1" data-split><span class="h-thin">{{ S.hero.h1a }}</span> <em>{{ S.hero.h1b }}</em></h1>
+      <p class="lead rv d2">{{ S.hero.lead }}</p>
+      <div class="hero-cta rv d3">
+        <a class="btn btn-amber mag" href="#rezervace"><span>Rezervovat stůl</span></a>
+        <a class="lnk" href="#kontakt">Jak k nám trefit <span aria-hidden="true">→</span></a>
+      </div>
+      <dl class="hero-facts rv d4">
+        <div><dt>Adresa</dt><dd>{{ S.address.street }}, Brno</dd></div>
+        <div><dt>Dnes</dt><dd data-today>Po–Pá 16–24, So–Ne 17–24</dd></div>
+      </dl>
+    </div>
+    <div class="hero-img">
+      <figure class="arch clip">
+        <img src="img/salon-klenba.jpg" alt="Sál pivnice U Ričího pod klenbou s dřevěnými stoly" width="720" height="1080" fetchpriority="high">
+      </figure>
+      <div class="seal" aria-hidden="true">
+        <svg viewBox="0 0 200 200"><defs><path id="c" d="M100,100 m-74,0 a74,74 0 1,1 148,0 a74,74 0 1,1 -148,0"/></defs>
+          <text><textPath href="#c">KOZEL · RADEGAST · PILSNER URQUELL · BRNO ·</textPath></text></svg>
+        <span class="seal-c">od<br><b>2014</b></span>
+      </div>
+      <div class="foam-card rv d4">
+        <span class="fc-l">Naše hlavní pivo</span>
+        <span class="fc-n">Kozel 11°</span>
+        <span class="fc-p">0,5 l · 49 Kč</span>
+      </div>
+    </div>
+  </div>
+  <a class="scroll-ind" href="#o-nas" aria-label="Posunout dolů"><span></span>Dolů</a>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="mq-track">
+    {% for r in range(2) %}<div class="mq-row">{% for m in S.marquee %}<span>{{ m }}</span><i>✱</i>{% endfor %}</div>{% endfor %}
+  </div>
+</div>
+
+<!-- O NÁS -->
+<section class="about" id="o-nas">
+  <div class="wrap about-g">
+    <figure class="about-img clip">
+      <img src="img/salon-vpravo.jpg" alt="Dlouhé stoly a televize v sále pivnice" width="605" height="1080" loading="lazy">
+    </figure>
+    <div class="about-txt">
+      <p class="label rv">{{ S.about.label }}</p>
+      <h2 class="h2 rv"><span class="h-thin">{{ S.about.h2a }}</span> <em>{{ S.about.h2b }}</em></h2>
+      {% for p in S.about.p %}<p class="body rv">{{ p }}</p>{% endfor %}
+      <blockquote class="pull rv">
+        <p>„{{ S.about.quote }}“</p>
+        <cite>{{ S.about.quote_by }}</cite>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- STATS (dark) -->
+<section class="stats">
+  <div class="wrap stats-g">
+    {% for s in S.stats %}
+    <div class="stat rv">
+      <span class="stat-n"><span data-count="{{ s.n }}" data-dec="{{ s.dec or 0 }}" {% if s.plain %}data-plain{% endif %}>{{ s.n }}</span>{{ s.suffix }}{% if s.star %}<sup>★</sup>{% endif %}</span>
+      <span class="stat-t">{{ s.t }}</span>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<!-- NA ČEPU (signature: tabule + sklenice) -->
+<section class="cep" id="na-cepu">
+  <img class="cep-tap" src="img/paka.jpg" alt="" width="1800" height="655" loading="lazy">
+  <div class="wrap cep-g">
+    <div class="cep-head">
+      <p class="label label-l rv">{{ S.cep.label }}</p>
+      <h2 class="h2 h2-l rv"><span class="h-thin">{{ S.cep.h2a }}</span> <em>{{ S.cep.h2b }}</em></h2>
+      <p class="body body-l rv">{{ S.cep.p }}</p>
+      <div class="glass rv" aria-hidden="true">
+        <svg viewBox="0 0 120 200">
+          <defs>
+            <clipPath id="gl"><path d="M14 8 H106 L96 186 Q95 194 87 194 H33 Q25 194 24 186 Z"/></clipPath>
+            <linearGradient id="beer" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1b544"/><stop offset="1" stop-color="#b8701a"/></linearGradient>
+          </defs>
+          <g clip-path="url(#gl)">
+            <g class="g-fill">
+              <rect x="0" y="40" width="120" height="170" fill="url(#beer)"/>
+              <path class="g-foam" d="M0 44 Q10 22 22 34 Q30 14 44 30 Q56 12 68 30 Q80 14 92 32 Q104 20 120 38 V52 H0 Z" fill="#fbf3e2"/>
+              <circle class="bub b1" cx="40" cy="170" r="2.2" fill="#ffe1a0"/><circle class="bub b2" cx="70" cy="180" r="1.6" fill="#ffe1a0"/><circle class="bub b3" cx="86" cy="160" r="2" fill="#ffe1a0"/>
+            </g>
+          </g>
+          <path d="M14 8 H106 L96 186 Q95 194 87 194 H33 Q25 194 24 186 Z" fill="none" stroke="#f3ebdc" stroke-opacity=".55" stroke-width="2.5"/>
+          <path d="M22 20 L30 178" stroke="#fff" stroke-opacity=".18" stroke-width="5" stroke-linecap="round"/>
+        </svg>
+        <span class="glass-cap">Scrollujte, natočíme Vám.</span>
+      </div>
+    </div>
+    <div class="board rv">
+      <div class="board-in">
+        <p class="board-h">Dnes točíme</p>
+        <ul class="board-list">
+          {% for b in NAP %}
+          <li class="{{ 'hl' if b.hl }}"><span class="bn">{{ b.n }}</span><span class="bm">{{ b.m }}</span><span class="bdots"></span><span class="bp">{{ b.p }},-</span></li>
+          {% if loop.index == 4 %}<li class="board-sep">z lednice</li>{% endif %}
+          {% endfor %}
+        </ul>
+        <p class="board-foot">{{ S.cep.note }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- K PIVU -->
+<section class="food" id="k-pivu">
+  <div class="wrap food-g">
+    <div class="food-l">
+      <p class="label rv">{{ S.food.label }}</p>
+      <h2 class="h2 rv"><span class="h-thin">{{ S.food.h2a }}</span> <em>{{ S.food.h2b }}</em></h2>
+      <p class="body rv">{{ S.food.p }}</p>
+      <figure class="food-img clip"><img src="img/pena.jpg" alt="Sklenice piva s pěnou shora (ilustrační foto)" width="1024" height="768" loading="lazy"><figcaption>ilustrační foto</figcaption></figure>
+    </div>
+    <div class="food-r">
+      <ol class="menu">
+        {% for f in KUCH %}
+        <li class="menu-i rv">
+          <span class="mi-n">{{ '%02d' % loop.index }}</span>
+          <div class="mi-t"><h3>{{ f.n }}</h3><p>{{ f.d }}</p></div>
+          <span class="mi-p">cenu doplníme</span>
+        </li>
+        {% endfor %}
+      </ol>
+      <p class="sample rv">{{ S.food.note }}</p>
+    </div>
+  </div>
+</section>
+
+<!-- ZÁBAVA (bento) -->
+<section class="fun" id="zabava">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="label rv">{{ S.zabava.label }}</p>
+      <h2 class="h2 rv"><span class="h-thin">{{ S.zabava.h2a }}</span> <em>{{ S.zabava.h2b }}</em></h2>
+    </div>
+    <div class="bento">
+      {% for z in ZAB %}
+      <article class="bx bx-{{ z.size }} pop">
+        {% if z.img %}<img src="img/{{ z.img }}" alt="{{ z.t }}{{ ' (ilustrační foto)' if z.ilu }}" loading="lazy">{% endif %}
+        <div class="bx-c">
+          <h3>{{ z.t }}</h3>
+          <p>{{ z.d }}</p>
+        </div>
+        {% if z.ilu %}<span class="ilu">ilustrační foto</span>{% endif %}
+      </article>
+      {% endfor %}
+    </div>
+    <p class="sample rv">{{ S.zabava.note }}</p>
+  </div>
+</section>
+
+<!-- AKCE -->
+<section class="events" id="akce">
+  <div class="wrap">
+    <div class="sec-head sec-head-row">
+      <div>
+        <p class="label rv">{{ S.akce.label }}</p>
+        <h2 class="h2 rv"><span class="h-thin">{{ S.akce.h2a }}</span> <em>{{ S.akce.h2b }}</em></h2>
+      </div>
+      <p class="body rv">{{ S.akce.p }}</p>
+    </div>
+    <div class="tickets">
+      {% for a in AKCE %}
+      <article class="ticket rv{{ ' is-sample' if a.sample }}">
+        <div class="tk-img"><img src="img/{{ a.img }}" alt="" loading="lazy"></div>
+        <div class="tk-stub"><span class="tk-day">{{ a.day }}</span><span class="tk-kind">{{ a.kind }}</span></div>
+        <div class="tk-body">
+          <p class="tk-when">{{ a.when }}</p>
+          <h3>{{ a.t }}</h3>
+          <p>{{ a.d }}</p>
+          {% if a.sample %}<span class="badge">ukázka, doplníme podle Vás</span>{% endif %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- IMAGE BREAK: panorama baru -->
+<section class="brk">
+  <div class="wrap brk-c">
+    <h2 class="h2 h2-l rv">{{ S.break.h }}</h2>
+    <div>
+      <p class="body body-l rv">{{ S.break.p }}</p>
+      <a class="lnk rv" href="#rezervace">Poptat salonek <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+  <div class="pano-w"><figure class="pano clip-x"><img src="img/bar-pas.jpg" alt="Bar pivnice pod klenbou s nápisem Salonky Jack Daniel's a nekuřácký" width="1900" height="325" loading="lazy"></figure></div>
+</section>
+
+<!-- REZERVACE -->
+<section class="rez" id="rezervace">
+  <div class="wrap rez-g">
+    <div class="rez-l">
+      <p class="label label-l rv">{{ S.rez.label }}</p>
+      <h2 class="h2 h2-l rv"><span class="h-thin">{{ S.rez.h2a }}</span> <em>{{ S.rez.h2b }}</em></h2>
+      <p class="body body-l rv">{{ S.rez.p }}</p>
+      <ul class="rez-info rv">
+        <li><span>Telefon</span><a href="tel:{{ S.phone_href }}">{{ S.phone }}</a></li>
+        <li><span>E-mail</span><a href="mailto:{{ S.email }}">{{ S.email }}</a></li>
+        <li><span>Facebook</span><a href="{{ S.facebook }}" target="_blank" rel="noopener">pivniceuriciho</a></li>
+      </ul>
+    </div>
+    <form class="form rv" data-demo novalidate>
+      <div class="f2">
+        <label class="fl"><span>Jméno</span><input name="jmeno" required autocomplete="name" placeholder="Jan Novák"></label>
+        <label class="fl"><span>Telefon nebo e-mail</span><input name="kontakt" required placeholder="kam Vám rezervaci potvrdíme"></label>
+      </div>
+      <div class="f3">
+        <label class="fl"><span>Datum</span><input type="date" name="datum" required></label>
+        <label class="fl"><span>Čas</span><input type="time" name="cas" value="18:00" step="900" required></label>
+        <label class="fl"><span>Počet osob</span><input type="number" name="osob" min="1" max="60" value="4" required></label>
+      </div>
+      <fieldset class="chips">
+        <legend>Kde chcete sedět</legend>
+        {% for sp in S.rez.spaces %}<label class="chip"><input type="radio" name="prostor" value="{{ sp }}" {{ 'checked' if loop.last }}><span>{{ sp }}</span></label>{% endfor %}
+      </fieldset>
+      <label class="fl"><span>Poznámka</span><textarea name="pozn" rows="3" placeholder="Oslava, kvízový tým, sledování zápasu…"></textarea></label>
+      <button class="btn btn-amber btn-full mag" type="submit"><span>Odeslat rezervaci</span></button>
+      <p class="form-ok" role="status" hidden>{{ S.rez.done }}</p>
+      <p class="form-note">Ukázkový formulář v návrhu webu.</p>
+    </form>
+  </div>
+</section>
+
+<!-- KONTAKT -->
+<section class="kontakt" id="kontakt">
+  <div class="wrap kontakt-g">
+    <div class="k-l">
+      <p class="label rv">{{ S.kontakt.label }}</p>
+      <h2 class="h2 rv"><span class="h-thin">{{ S.kontakt.h2a }}</span> <em>{{ S.kontakt.h2b }}</em></h2>
+      <p class="body rv">{{ S.kontakt.p }}</p>
+      <div class="nav-btns rv">
+        <a class="btn btn-ink" href="{{ S.mapy_url }}" target="_blank" rel="noopener">Navigovat v Mapy.com</a>
+        <a class="btn btn-line" href="{{ S.google_url }}" target="_blank" rel="noopener">Google Mapy</a>
+      </div>
+      <table class="hours rv" aria-label="Otevírací doba">
+        <caption>Otevírací doba</caption>
+        {% for h in S.hours %}
+        <tr data-day="{{ loop.index0 }}"><th>{{ h.d }}{% if h.note %} <small>{{ h.note }}</small>{% endif %}</th><td>{{ h.o }} – {{ h.c }}</td></tr>
+        {% endfor %}
+      </table>
+    </div>
+    <div class="k-r">
+      <div id="map" class="map" role="img" aria-label="Mapa: Pivnice U Ričího, Jana Uhra 168/10, Brno"></div>
+      <div class="addr-card">
+        <span class="logo logo-sm"><span class="logo-s">pivnice</span><span class="logo-m">U Ričího</span></span>
+        <p>{{ S.address.street }}<br>{{ S.address.city }}, {{ S.address.part }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="ftr">
+  <div class="wrap ftr-g">
+    <div>
+      <span class="logo logo-lg"><span class="logo-s">pivnice</span><span class="logo-m">U Ričího</span></span>
+      <p class="ftr-claim">Kozlovská pivnice na Veveří od roku 2014.</p>
+    </div>
+    <div class="ftr-c">
+      <p>{{ S.address.street }}<br>{{ S.address.city }}</p>
+      <p><a href="tel:{{ S.phone_href }}">{{ S.phone }}</a><br><a href="mailto:{{ S.email }}">{{ S.email }}</a></p>
+    </div>
+    <div class="ftr-c">
+      <p>Po–Pá 16:00–24:00<br>So–Ne 17:00–24:00</p>
+      <p><a href="{{ S.facebook }}" target="_blank" rel="noopener">Facebook</a></p>
+    </div>
+  </div>
+  <div class="wrap ftr-b">
+    <span>© {{ YEAR }} Pivnice U Ričího</span>
+    <span>Nezávazný návrh webu od Studentských Webů</span>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin defer></script>
+<script>window.HOURS={{ HOURS }};window.GEO=[{{ S.address.lat }},{{ S.address.lng }}];</script>
+<script src="assets/main.js?v={{ V.js }}" defer></script>
+</body>
+</html>

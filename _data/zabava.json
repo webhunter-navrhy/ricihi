@@ -1,0 +1,8 @@
+[
+  {"t": "Šipky", "d": "Turnajové automaty na šipky. Přijďte si hodit s partou.", "img": "sipky.jpg", "size": "tall", "ilu": true},
+  {"t": "Salonky Jack Daniel's a nekuřácký", "d": "Vzadu za barem dva salonky pro oslavy a větší skupiny.", "img": "bar-pas.jpg", "size": "wide"},
+  {"t": "Fotbálek", "d": "Stolní fotbal pro čtyři hráče. Kdo prohraje, platí rundu.", "img": "fotbalek.jpg", "size": "sq", "ilu": true},
+  {"t": "Sport v televizi", "d": "Velké obrazovky v sále, hokej a fotbal se dívá líp ve společnosti.", "img": "salon-vpravo.jpg", "size": "sq"},
+  {"t": "Pinball", "d": "Flipper pro ty, kdo si ještě pamatují, jak se to hraje.", "size": "txt"},
+  {"t": "Zahrádka", "d": "V létě posezení venku. Termín otevření hlásíme na webu.", "size": "txt2"}
+]
