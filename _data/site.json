@@ -98,7 +98,7 @@
     "Fotbálek",
     "Středeční kvíz",
     "Salonek Jack Daniel's",
-    "Nekuřácký salonek",
+    "Salonek s pohovkami",
     "Od roku 2014"
   ],
   "about": {
@@ -107,7 +107,7 @@
     "h2b": "chodí znovu.",
     "p": [
       "Pivnici U Ričího jsme otevřeli 6. srpna 2014 v ulici Jana Uhra na Veveří. Od té doby tu točíme Velkopopovického Kozla, Radegast a k tomu se vždycky najde něco na zub.",
-      "Pod klenbou se sedí u dlouhých dřevěných stolů, vzadu jsou salonky Jack Daniel's a nekuřácký. Přijďte po práci na jedno, s partou na šipky nebo s týmem na středeční kvíz."
+      "Pod klenbou se sedí u dlouhých dřevěných stolů, vzadu jsou salonky Jack Daniel's a salonek s pohovkami. Přijďte po práci na jedno, s partou na šipky nebo s týmem na středeční kvíz."
     ],
     "quote": "Výborně natočené pivko, výborný chléb s tvarůžkem a k tomu příjemná obsluha. Mohu jen doporučit.",
     "quote_by": "Michal P., recenze na Google"
@@ -141,7 +141,7 @@
     "label": "Na čepu",
     "h2a": "Kozlovská",
     "h2b": "pivnice.",
-    "p": "Hlavní je u nás Velkopopovický Kozel. Vedle něj točíme Radegast Ryze hořkou 12°, Volbu sládků a cider Frisco, v lednici je Pilsner Urquell, Proud i nealko Birell.",
+    "p": "Hlavní je u nás Velkopopovický Kozel. Vedle něj točíme Radegast Ryze hořkou 12°, speciály z Prazdroje a cider Frisco, v lednici je Pilsner Urquell, Proud i nealko Birell.",
     "note": "Ceny podle tabule u vchodu. Před spuštěním webu je s Vámi sladíme a budete je moct sami měnit."
   },
   "food": {
@@ -165,7 +165,7 @@
   },
   "break": {
     "h": "Slavíte? Máme salonky.",
-    "p": "Salonek Jack Daniel's a nekuřácký salonek jsou ideální na narozeniny, sraz spolužáků nebo kvízový tým. Napište, kolik Vás bude, a stůl připravíme."
+    "p": "Salonek Jack Daniel's a salonek s pohovkami jsou ideální na narozeniny, sraz spolužáků nebo kvízový tým. Napište, kolik Vás bude, a stůl připravíme."
   },
   "rez": {
     "label": "Rezervace",
@@ -175,7 +175,7 @@
     "spaces": [
       "Hlavní sál pod klenbou",
       "Salonek Jack Daniel's",
-      "Nekuřácký salonek",
+      "Salonek s pohovkami",
       "Je mi to jedno"
     ],
     "done": "Díky! Toto je ukázka v návrhu webu, nic se neodeslalo. Na hotovém webu Vám rezervace přijde rovnou do e-mailu."
