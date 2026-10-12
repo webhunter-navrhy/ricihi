@@ -1,5 +1,5 @@
 [
-  {"when": "Každou středu", "day": "St", "t": "PubQuiz U Ričího", "d": "Týmový kvíz v hospodě. Sestavte tým, zarezervujte stůl a přijďte si zasoutěžit.", "kind": "pravidelně", "img": "salon-klenba.jpg"},
+  {"when": "Každý čtvrtek", "day": "Čt", "t": "Pub Quiz", "d": "Týmový kvíz v hospodě. Na soutěž se přihlašujete přes web Pub Quiz, stůl si u nás můžete zarezervovat předem.", "kind": "pravidelně", "img": "salon-klenba.jpg"},
   {"when": "6. srpna", "day": "6/8", "t": "Narozeniny pivnice", "d": "Výročí otevření slavíme každý rok. V roce 2024 to bylo rovných deset let U Ričího.", "kind": "každý rok", "img": "bar-lahve.jpg"},
   {"when": "Před Vánoci", "day": "24/12", "t": "Vánoční večírek s tombolou", "d": "Tradiční tombola plná cen a večírek pro štamgasty i nové tváře.", "kind": "každý rok", "img": "tombola.jpg"},
   {"when": "Podle programu", "day": "TV", "t": "Přenosy zápasů", "d": "Hokej i fotbal na velkých obrazovkách. Program přenosů doplníme.", "kind": "ukázka", "sample": true, "img": "salon-vpravo.jpg"}

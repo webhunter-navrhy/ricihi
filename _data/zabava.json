@@ -1,8 +1,8 @@
 [
-  {"t": "Šipky", "d": "Turnajové automaty na šipky. Přijďte si hodit s partou.", "img": "sipky.jpg", "size": "tall", "ilu": true},
-  {"t": "Salonek Jack Daniel's a salonek s pohovkami", "d": "Vzadu za barem dva salonky (jeden s pěti pohovkami) pro oslavy a větší skupiny.", "img": "bar-pas.jpg", "size": "wide"},
-  {"t": "Fotbálek", "d": "Stolní fotbal pro čtyři hráče. Kdo prohraje, platí rundu.", "img": "fotbalek.jpg", "size": "sq", "ilu": true},
+  {"t": "Šipky", "d": "Tři šipkové automaty: dva v salonku Jack Daniel's a jeden hned u vstupu. Přijďte si hodit s partou.", "img": "sipky.jpg", "size": "tall", "ilu": true},
+  {"t": "Tři salonky", "d": "Salonek Jack Daniel's se šipkami a salonek s pohovkami na pohodlné posezení, každý zhruba pro 20 lidí. Hlavní místnost s barem pojme 45 až 50 hostů.", "img": "bar-pas.jpg", "size": "wide"},
+  {"t": "Fotbálek", "d": "Dva fotbálky značky 4P ve třetím salonku hned vpravo u vstupu, jen pro hráče a bez sezení. Kdo prohraje, platí rundu.", "img": "fotbalek.jpg", "size": "sq", "ilu": true},
   {"t": "Sport v televizi", "d": "Velké obrazovky v sále, hokej a fotbal se dívá líp ve společnosti.", "img": "salon-vpravo.jpg", "size": "sq"},
-  {"t": "Pinball", "d": "Flipper pro ty, kdo si ještě pamatují, jak se to hraje.", "size": "txt"},
+  {"t": "Pinball", "d": "Dva flippery, No Fear a Addams Family. A v rohu hraje jukebox.", "size": "txt"},
   {"t": "Zahrádka", "d": "V létě posezení venku. Termín otevření hlásíme na webu.", "size": "txt2"}
 ]

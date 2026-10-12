@@ -1,7 +1,7 @@
 {
   "name": "Pivnice U Ričího",
   "title": "Pivnice U Ričího – kozlovská pivnice na Veveří | Brno, Jana Uhra 10",
-  "description": "Kozlovská pivnice v Brně na Veveří, Jana Uhra 10. Točený Kozel a Radegast, chleba s tvarůžkem, šipky, fotbálek, salonky a středeční kvíz. Otevřeno každý den od 16 hodin.",
+  "description": "Kozlovská pivnice v Brně na Veveří, Jana Uhra 10. Čepovaný Kozel a Radegast, chleba s tvarůžkem, šipky, fotbálek, salonky a čtvrteční kvíz. Otevřeno každý den do půlnoci.",
   "address": {
     "street": "Jana Uhra 168/10",
     "city": "602 00 Brno",
@@ -87,11 +87,11 @@
     "kicker": "Kozlovská pivnice · Brno-Veveří · od roku 2014",
     "h1a": "Na jedno",
     "h1b": "u Ričího.",
-    "lead": "Dobře natočený Kozel a Radegast, chleba s tvarůžkem, šipky a fotbálek. Klenutý sál, dva salonky a ve středu kvíz. Otevíráme každý den odpoledne, kousek od centra na Veveří."
+    "lead": "Dobře načepovaný Kozel a Radegast, chleba s tvarůžkem, šipky a fotbálek. Klenutý sál, tři salonky, dva flippery a ve čtvrtek kvíz. Otevřeno každý den do půlnoci, kousek od centra na Veveří."
   },
   "marquee": [
     "Kozel 11°",
-    "Radegast Ryze hořká 12°",
+    "Radegast 12°",
     "Frisco na čepu",
     "Chleba s tvarůžkem",
     "Šipky",
@@ -106,8 +106,8 @@
     "h2a": "Pivnice, kam se",
     "h2b": "chodí znovu.",
     "p": [
-      "Pivnici U Ričího jsme otevřeli 6. srpna 2014 v ulici Jana Uhra na Veveří. Od té doby tu točíme Velkopopovického Kozla, Radegast a k tomu se vždycky najde něco na zub.",
-      "Pod klenbou se sedí u dlouhých dřevěných stolů, vzadu jsou salonky Jack Daniel's a salonek s pohovkami. Přijďte po práci na jedno, s partou na šipky nebo s týmem na středeční kvíz."
+      "Pivnici U Ričího jsme otevřeli 6. srpna 2014 v ulici Jana Uhra na Veveří. Od té doby tu čepujeme Velkopopovického Kozla, Radegast a k tomu se vždycky najde něco na zub.",
+      "Pod klenbou se sedí u dlouhých dřevěných stolů, vzadu jsou salonky Jack Daniel's a salonek s pohovkami. Přijďte po práci na jedno, s partou na šipky nebo s týmem na čtvrteční kvíz."
     ],
     "quote": "Výborně natočené pivko, výborný chléb s tvarůžkem a k tomu příjemná obsluha. Mohu jen doporučit.",
     "quote_by": "Michal P., recenze na Google"
@@ -141,8 +141,8 @@
     "label": "Na čepu",
     "h2a": "Kozlovská",
     "h2b": "pivnice.",
-    "p": "Hlavní je u nás Velkopopovický Kozel. Vedle něj točíme Radegast Ryze hořkou 12°, speciály z Prazdroje a cider Frisco, v lednici je Pilsner Urquell, Proud i nealko Birell.",
-    "note": "Ceny podle tabule u vchodu. Před spuštěním webu je s Vámi sladíme a budete je moct sami měnit."
+    "p": "Hlavní je u nás Velkopopovický Kozel. Vedle něj čepujeme Radegast 12° a cider Frisco jablko, na čtvrtém kohoutu bývají speciály z Prazdroje (do konce října nefiltrovaný Pilsner Urquell). V lednici je Pilsner Urquell, Proud i nealko Birell.",
+    "note": "Aktuální ceny podle majitele. Na hotovém webu je budete moct sami měnit."
   },
   "food": {
     "label": "K pivu",
@@ -155,23 +155,23 @@
     "label": "Zábava a salonky",
     "h2a": "Nejen",
     "h2b": "na pivo.",
-    "note": "Vybavení podle fotek a recenzí hostů. Co dnes platí, s Vámi ověříme."
+    "note": "Vybavení podle údajů majitele."
   },
   "akce": {
     "label": "Akce",
     "h2a": "Co se",
     "h2b": "u nás děje.",
-    "p": "Pravidelný kvíz, narozeniny pivnice a vánoční večírek s tombolou. Nové akce sem budete přidávat sami a hosté je uvidí dřív, než se rozkoukají na Facebooku."
+    "p": "Čtvrteční Pub Quiz, narozeniny pivnice a vánoční večírek s tombolou. Nové akce sem budete přidávat sami a hosté je uvidí dřív, než se rozkoukají na Facebooku."
   },
   "break": {
     "h": "Slavíte? Máme salonky.",
-    "p": "Salonek Jack Daniel's a salonek s pohovkami jsou ideální na narozeniny, sraz spolužáků nebo kvízový tým. Napište, kolik Vás bude, a stůl připravíme."
+    "p": "Salonek Jack Daniel's i salonek s pohovkami pojmou zhruba dvacet lidí, takže se hodí na narozeniny, sraz spolužáků nebo kvízový tým. Napište, kolik Vás bude, a stůl připravíme."
   },
   "rez": {
     "label": "Rezervace",
     "h2a": "Zarezervujte",
     "h2b": "si stůl.",
-    "p": "Vyplňte pár údajů a rezervaci Vám potvrdíme e-mailem. Na středeční kvíz doporučujeme rezervovat s předstihem.",
+    "p": "Vyplňte pár údajů a rezervaci Vám potvrdíme e-mailem. Na čtvrteční kvíz doporučujeme rezervovat s předstihem.",
     "spaces": [
       "Hlavní sál pod klenbou",
       "Salonek Jack Daniel's",

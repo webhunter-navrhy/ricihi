@@ -1,8 +1,8 @@
 [
-  {"n": "Velkopopovický Kozel 11°", "m": "0,5 l", "p": 49, "tag": "Na čepu", "hl": true},
-  {"n": "Radegast Ryze hořká 12°", "m": "0,5 l", "p": 52, "tag": "Na čepu"},
-  {"n": "Speciály z Prazdroje", "m": "0,4 l", "p": 49, "tag": "Na čepu"},
-  {"n": "Frisco cider", "m": "0,4 l", "p": 53, "tag": "Na čepu"},
+  {"n": "Velkopopovický Kozel 11°", "m": "0,5 l", "p": 55, "tag": "Na čepu", "hl": true},
+  {"n": "Radegast 12°", "m": "0,5 l", "p": 59, "tag": "Na čepu"},
+  {"n": "Pilsner Urquell nefiltrovaný", "m": "0,5 l", "p": 70, "tag": "Na čepu · do konce října"},
+  {"n": "Frisco jablko", "m": "0,4 l", "p": 60, "tag": "Na čepu"},
   {"n": "Pilsner Urquell", "m": "láhev", "p": 61, "tag": "Lahvové"},
   {"n": "Proud", "m": "láhev", "p": 53, "tag": "Lahvové"},
   {"n": "Birell světlý, nealko", "m": "láhev", "p": 42, "tag": "Nealko"}
